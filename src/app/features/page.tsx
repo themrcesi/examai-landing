@@ -270,7 +270,7 @@ export default function FeaturesPage() {
         <h2 className="text-3xl font-bold mb-4">Ready to revolutionize your {isTeacher ? 'teaching' : 'learning'} experience?</h2>
         <p className="text-xl text-gray-600 mb-8">Join our waitlist and be the first to experience ExamAI when we launch.</p>
         <Button size="lg" asChild>
-          <Link href="/join-waitlist">Join Waitlist</Link>
+          <Link href="/waitlist">Join Waitlist</Link>
         </Button>
       </section>
     </div>
