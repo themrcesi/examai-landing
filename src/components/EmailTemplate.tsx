@@ -37,10 +37,10 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({ firstNam
         />
         <Heading className="text-3xl font-bold text-center text-gray-800 mb-6">Welcome to ExamAI, {firstName}!</Heading>
         <Text className="text-gray-700 text-base mb-4">
-          Thank you for joining our waitlist. We're excited to have you on board as we prepare to launch ExamAI, your AI-powered exam preparation platform.
+          Thank you for joining our waitlist. We&apos;re excited to have you on board as we prepare to launch ExamAI, your AI-powered exam preparation platform.
         </Text>
         <Text className="text-gray-700 text-base mb-4">
-          We'll keep you updated on our progress and let you know as soon as ExamAI is ready for you to start revolutionizing your exam preparation.
+          We&apos;ll keep you updated on our progress and let you know as soon as ExamAI is ready for you to start revolutionizing your exam preparation.
         </Text>
         <Text className="text-gray-700 text-base mb-4">
           In the meantime, if you have any questions or feedback, feel free to reach out to us at{' '}

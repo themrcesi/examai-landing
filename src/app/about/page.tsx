@@ -93,7 +93,7 @@ export default function AboutPage() {
       >
         <h2 className="text-3xl font-bold mb-4">Join the ExamAI Revolution</h2>
         <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-          Be part of the future of education. Whether you're a student aiming for success 
+          Be part of the future of education. Whether you&apos;re a student aiming for success 
           or an educator looking to enhance your teaching, ExamAI is here to support your journey.
         </p>
         <Button size="lg" asChild>
