@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Switch } from '@/components/ui/switch'
-import { Brain, Upload, Settings, PenTool, BarChart3, BookOpen, FileCheck, Clock, Trophy, Calendar } from 'lucide-react'
+import { Brain, Upload, Settings, PenTool, BarChart3, BookOpen, FileCheck, Clock, Trophy, Calendar, Layers, FolderTree, Target, Users, Clipboard } from 'lucide-react'
 
 export default function FeaturesPage() {
   const [isTeacher, setIsTeacher] = useState(false)
@@ -109,6 +109,29 @@ export default function FeaturesPage() {
         />
       </FeatureSection>
 
+      <FeatureSection icon={Layers} title="Course & Topic Modeling">
+        <FeatureCard
+          icon={FolderTree}
+          title="Course Creation"
+          description="For advanced users, create structured courses with multiple topics and subtopics. Organize your content hierarchically to mirror your curriculum or study plan."
+          list={[
+            "Intuitive course builder interface",
+            "Attach relevant content to each topic or subtopic",
+          ]}
+        />
+        <FeatureCard
+          icon={Target}
+          title="Topic-Specific Exams"
+          description="Generate targeted exams for specific topics or entire courses. Ensure comprehensive coverage of your subject matter with our intelligent exam creation system."
+          list={[
+            "Create exams for individual topics or full courses",
+            "Automatic question distribution based on topic importance",
+            "Mix questions from multiple topics for comprehensive tests",
+            "Customizable difficulty progression throughout the exam"
+          ]}
+        />
+      </FeatureSection>
+
       <FeatureSection icon={Calendar} title="Study Planner">
         <FeatureCard
           icon={Brain}
@@ -180,6 +203,49 @@ export default function FeaturesPage() {
             "Generate professional-looking exam papers"
           ]}
         />
+      </FeatureSection>
+
+      <FeatureSection icon={Layers} title="Course & Topic Modeling">
+        <FeatureCard
+          icon={FolderTree}
+          title="Curriculum Mapping"
+          description="Create a comprehensive digital representation of your curriculum, aligning with educational standards and learning objectives."
+          list={[
+            "Map courses to specific learning outcomes and standards",
+            "Create hierarchical structure of courses, units, and lessons",
+            "Link resources and assessments to specific curriculum elements"
+          ]}
+        />
+        {/* <FeatureCard
+          icon={Users}
+          title="Collaborative Course Design"
+          description="Work together with colleagues to design and refine courses, ensuring consistency across the curriculum."
+          list={[
+            "Real-time collaboration on course structure and content",
+            "Version control and change tracking for curriculum updates",
+            "Role-based access for department heads, teachers, and administrators"
+          ]}
+        /> */}
+        <FeatureCard
+          icon={Target}
+          title="Adaptive Assessment Creation"
+          description="Generate assessments that adapt to your curriculum structure and learning objectives."
+          list={[
+            "Create exams that cover multiple courses or specific topics",
+            "Automatically balance questions based on curriculum weightings",
+            "Generate formative and summative assessments aligned with learning outcomes"
+          ]}
+        />
+        {/* <FeatureCard
+          icon={Clipboard}
+          title="Curriculum Analytics"
+          description="Gain insights into your curriculum's effectiveness and student performance across different topics and courses."
+          list={[
+            "Analyze student performance data in relation to curriculum elements",
+            "Identify gaps or overlaps in curriculum coverage",
+            "Generate reports on curriculum effectiveness for accreditation purposes"
+          ]}
+        /> */}
       </FeatureSection>
     </>
   )
